@@ -1,11 +1,13 @@
+package p1d2;
+
 /**
- * @ClassName F02MultiConstructParam
+ * @ClassName MultiConstructParam
  * @Description //构造模式
  * @Author ccy
  * @Date 2020/12/3 15:18
  * @Version 1.0
  **/
-public class F02MultiConstructParam {
+public class MultiConstructParam {
     private final int a;
     private final int b;
     private final int c;
@@ -14,7 +16,7 @@ public class F02MultiConstructParam {
     private final int f;
 
     //使用builder模式为构造参数赋值
-    private F02MultiConstructParam(Builder builder){
+    private MultiConstructParam(Builder builder){
         a = builder.a;
         b = builder.b;
         c = builder.c;
@@ -44,13 +46,13 @@ public class F02MultiConstructParam {
         public Builder e(int i){ e = i; return this;}
         public Builder f(int i){ f = i; return this;}
 
-        public F02MultiConstructParam build(){
-            return new F02MultiConstructParam(this);
+        public MultiConstructParam build(){
+            return new MultiConstructParam(this);
         }
     }
 }
 
-// F02MultiConstructParam obj = new F02MultiConstructParam.Builder(1, 2)
-//             .c(3).d(4).e(5).f(6).build();
+
+
 
 
