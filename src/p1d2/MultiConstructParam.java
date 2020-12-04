@@ -7,7 +7,32 @@ package p1d2;
  * @Date 2020/12/3 15:18
  * @Version 1.0
  **/
+
 public class MultiConstructParam {
+    public int getA() {
+        return a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public int getC() {
+        return c;
+    }
+
+    public int getD() {
+        return d;
+    }
+
+    public int getE() {
+        return e;
+    }
+
+    public int getF() {
+        return f;
+    }
+
     private final int a;
     private final int b;
     private final int c;
